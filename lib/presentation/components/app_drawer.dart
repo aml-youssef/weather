@@ -55,7 +55,7 @@ class AppDrawer extends StatelessWidget {
               thickness: 2,
             ),
             ListTile(
-              leading: Icon(Icons.add_location_outlined),
+              leading: const Icon(Icons.add_location_outlined),
               title: Text(
                 'Other Locations',
                 style: Theme.of(context).textTheme.bodyText2,
@@ -63,7 +63,7 @@ class AppDrawer extends StatelessWidget {
               onTap: () {},
             ),
             ListTile(
-              leading: SizedBox(),
+              leading: const SizedBox(),
               title: Text(
                 'Saint Cathrine',
                 style: Theme.of(context).textTheme.bodyText2,
@@ -105,7 +105,7 @@ class AppDrawer extends StatelessWidget {
               thickness: 2,
             ),
             ListTile(
-              leading: Icon(Icons.info_outline),
+              leading: const Icon(Icons.info_outline),
               title: Text(
                 'Report Wrong Location',
                 style: Theme.of(context).textTheme.bodyText2,
@@ -113,7 +113,7 @@ class AppDrawer extends StatelessWidget {
               onTap: () {},
             ),
             ListTile(
-              leading: Icon(Icons.call_outlined),
+              leading: const Icon(Icons.call_outlined),
               title: Text(
                 'Contact us',
                 style: Theme.of(context).textTheme.bodyText2,

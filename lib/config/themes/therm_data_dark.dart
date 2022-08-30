@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
-ThemeData AppDarkTheme() {
+ThemeData appDarkTheme() {
   return ThemeData(
     backgroundColor: Colors.black,
     scaffoldBackgroundColor: Colors.black,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       backgroundColor: Colors.black,
       titleTextStyle: TextStyle(color: Colors.white),
       iconTheme: IconThemeData(color: Colors.white),
       elevation: 0,
     ),
-    hintColor: Color.fromARGB(255, 184, 183, 183),
-    iconTheme: IconThemeData(color: Color.fromARGB(255, 247, 247, 104)),
-    drawerTheme: DrawerThemeData(
+    hintColor: const Color.fromARGB(255, 184, 183, 183),
+    iconTheme: const IconThemeData(color: Color.fromARGB(255, 247, 247, 104)),
+    drawerTheme: const DrawerThemeData(
       backgroundColor: Color.fromARGB(255, 73, 73, 73),
     ),
-    textTheme: TextTheme(
+    textTheme: const TextTheme(
       bodyText1: TextStyle(
           color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
       bodyText2: TextStyle(
@@ -28,7 +28,7 @@ ThemeData AppDarkTheme() {
         // Foreground color
         onPrimary: Colors.white,
         // Background color
-        primary: Color.fromARGB(255, 190, 189, 189),
+        primary: const Color.fromARGB(255, 190, 189, 189),
       ).copyWith(
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
@@ -39,7 +39,7 @@ ThemeData AppDarkTheme() {
     cardTheme: CardTheme(
       elevation: 3,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
-      color: Color.fromARGB(200, 190, 189, 189),
+      color: const Color.fromARGB(200, 190, 189, 189),
     ),
   );
 }

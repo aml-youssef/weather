@@ -11,7 +11,6 @@ class AppMoodeCubit extends Cubit<AppMoodeState> {
   void changeAppMode() async {
     // bool isDark = !getAppMood();
     isDark = !isDark;
-    print('aloooooooooooooooo $isDark');
     final sharedPreferences = await SharedPreferences.getInstance();
     await WeatherLocalDataSourse(sharedPreferences).setAppMode(isDark);
     if (isDark) {
@@ -24,8 +23,6 @@ class AppMoodeCubit extends Cubit<AppMoodeState> {
   void getAppMood() async {
     final sharedPreferences = await SharedPreferences.getInstance();
     isDark = WeatherLocalDataSourse(sharedPreferences).getAppMode();
-    print('aloooooooooooooooo $isDark');
-
     if (isDark) {
       emit(WeatherDarkMode());
     } else {

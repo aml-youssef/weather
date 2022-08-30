@@ -30,7 +30,7 @@ class WeatherAppBar extends StatelessWidget {
                 children: [
                   Text('${weather.temperature}°',
                       style: const TextStyle(fontSize: 60)),
-                  Icon(
+                  const Icon(
                     Icons.sunny,
                     size: 72,
                   )

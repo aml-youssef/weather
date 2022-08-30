@@ -27,33 +27,5 @@ class WeatherLoaded extends WeatherState {
 
   @override
   List<Object> get props => [weather];
-//TODO : may be you need Coordinates state
 
 }
-
-
-
-//TODO : may be you need Coordinates state
-
-// class CoordinatesWeatherInitial extends WeatherState {}
-
-// class CoordinatesWeatherLoading extends WeatherState {}
-
-// class CoordinatesWeatherError extends WeatherState {
-//   final ErrorMessegeModel errorMessegeModel;
-
-//   const WeatherError({required this.errorMessegeModel});
-
-//   @override
-//   List<Object> get props => [errorMessegeModel];
-// }
-
-// class CoordinatesWeatherLoaded extends WeatherState {
-//   final Weather weather;
-
-//   const WeatherLoaded({required this.weather});
-
-//   @override
-//   List<Object> get props => [weather];
-// }
-

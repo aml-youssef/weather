@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 ThemeData appLightTheme() {
   return ThemeData(
     brightness: Brightness.light,
-    scaffoldBackgroundColor: Color.fromARGB(255, 135, 206, 235),
+    scaffoldBackgroundColor: const Color.fromARGB(255, 135, 206, 235),
     appBarTheme: const AppBarTheme(
       color: Color.fromARGB(255, 135, 206, 235),
       iconTheme: IconThemeData(color: Colors.white),
@@ -14,10 +14,10 @@ ThemeData appLightTheme() {
         fontWeight: FontWeight.bold,
       ),
     ),
-    iconTheme: IconThemeData(color: Color.fromARGB(255, 247, 247, 104)),
+    iconTheme: const IconThemeData(color: Color.fromARGB(255, 247, 247, 104)),
     drawerTheme:
-        DrawerThemeData(backgroundColor: Color.fromARGB(255, 135, 206, 235)),
-    textTheme: TextTheme(
+        const DrawerThemeData(backgroundColor: Color.fromARGB(255, 135, 206, 235)),
+    textTheme: const TextTheme(
       bodyText1: TextStyle(
           color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
       bodyText2: TextStyle(
@@ -28,7 +28,7 @@ ThemeData appLightTheme() {
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         onPrimary: Colors.white,
-        primary: Color.fromARGB(255, 184, 226, 243),
+        primary: const Color.fromARGB(255, 184, 226, 243),
       ).copyWith(
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
@@ -39,7 +39,7 @@ ThemeData appLightTheme() {
     cardTheme: CardTheme(
       elevation: 3,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
-      color: Color.fromARGB(200, 184, 226, 243),
+      color: const Color.fromARGB(200, 184, 226, 243),
     ),
   );
 }

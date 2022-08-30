@@ -22,28 +22,27 @@ class WeatherApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-      BlocProvider(
-        create: (context) => sl<WeatherCubit>(), 
-      ),
-      BlocProvider(
-        create: (context) => AppMoodeCubit()..getAppMood(), 
-      ),
+        BlocProvider(
+          create: (context) => sl<WeatherCubit>(),
+        ),
+        BlocProvider(
+          create: (context) => AppMoodeCubit()..getAppMood(),
+        ),
       ],
-      child: BlocBuilder<AppMoodeCubit, AppMoodeState>(
-        builder: (context, state) {
-          return MaterialApp(
-              title: AppConstants.appTitle,
-              theme: appLightTheme(),
-              darkTheme: AppDarkTheme(),
-              themeMode: BlocProvider.of<AppMoodeCubit>(context).isDark
-                  ? ThemeMode.dark
-                  : ThemeMode.light,
-              home: const SpalshScreen(),
-              routes: routes,
-              debugShowCheckedModeBanner: false,
-            );
-        }
-      ),
+      child:
+          BlocBuilder<AppMoodeCubit, AppMoodeState>(builder: (context, state) {
+        return MaterialApp(
+          title: AppConstants.appTitle,
+          theme: appLightTheme(),
+          darkTheme: appDarkTheme(),
+          themeMode: BlocProvider.of<AppMoodeCubit>(context).isDark
+              ? ThemeMode.dark
+              : ThemeMode.light,
+          home: const SpalshScreen(),
+          routes: routes,
+          debugShowCheckedModeBanner: false,
+        );
+      }),
     );
   }
 }
